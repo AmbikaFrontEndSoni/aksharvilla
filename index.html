@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- --------------------------------------------------header-section-start--------------------------------------->
+
+    <header class="container-fluid">
+      <div class="container-fluid d-none d-lg-block header-one">
+      <div class="row ">
+        <div class="col-6 d-flex gap-5 align-items-center">
+          <div
+        class=" d-flex gap-5"
+      >
+         
+          <div class="email_head-one">
+            <i class="fa-solid fa-envelope" style="color: #f35525"></i>
+            <span>info@aksharvilla.com</span>
+          </div>
+          <div class="email_head-one">
+            <i
+              class="fa-sharp fa-solid fa-book-open"
+              style="color: #f35525"
+            ></i>
+            <span>app.Knowledge City, Vadodara, Gujarat 390019</span>
+          </div>
+        </div>
+        </div>
+       
+        <div class="col-6 d-flex align-items-center justify-content-end gap-3 header-one-right ">
+            <i class="fa-brands fa-facebook p-2"></i>
+            <i class="fa-brands fa-twitter p-2"></i>
+            <i class="fa-brands fa-linkedin p-2"></i>
+            <i class="fa-brands fa-square-instagram p-2"></i>
+          </div>
+     </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./assets/images/logo2.png"
+              alt="logo"
+              style="width: 160px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-2 mb-3 mb-lg-0">
+              <li class="nav-item px-3">
+                <a class="nav-link active property_nav_link" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="properties.html"
+                  >Properties</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="property_details.html"
+                  >Property Details</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contactUs.html"
+                  >Contact Us</a
+                >
+              </li>
+             
+              <li class="nav-item ps-3 d-flex btn_nav_link">
+                <i class="fa-solid fa-phone"></i>
+                <a
+                  class="nav-link active text-white bg-dark px-5 text-right nav_button_style"
+                  href="#"
+                  >Schedule a viste
+                  <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form class="row g-3 contact_form bg-white">
+                          <div class="col-12">
+                            <label for="exampleInputEmail1" class="form-label"
+                              >Full Name</label
+                            >
+                            <input
+                              type="text"
+                              placeholder="Your Name"
+                              class="form-control transparent-input input_styles"
+                              id="inputName"
+                            />
+                          </div>
+                          <div class="col-md-12">
+                            <label for="exampleInputEmail1" class="form-label"
+                              >Email Address</label
+                            >
+                            <input
+                              type="email"
+                              placeholder="Your E-mail.."
+                              class="form-control transparent-input input_styles"
+                              id="inputEmail4"
+                            />
+                          </div>
+                          <div class="col-md-12">
+                            <label for="exampleInputEmail1" class="form-label"
+                              >Subject</label
+                            >
+                            <input
+                              type="email"
+                              placeholder="Subject.."
+                              class="form-control transparent-input input_styles"
+                              id="inputEmail4"
+                            />
+                          </div>
+             
+                          <div class="col-md-12">
+                            <label for="exampleInputEmail1" class="form-label"
+                              >Message</label
+                            >
+                            <textarea
+                              rows="5"
+                              class="form-control transparent-input input_styles pt-0"
+                              placeholder=" Your Message"
+                            ></textarea>
+                          </div>
+             
+                          <div class="col-3">
+                            <button
+                              type="submit"
+                              class="btn form_btn w-100 bg-dark text-white p-2 fs-6 rounded" data-bs-dismiss="modal"
+                            >
+                              Sign in
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                  </a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+     <!-- Modal -->
+    
+    <!-- --------------------------------------------------header-section-end------------------------------------ -->
+
+    <!-- -----------------------------------------------------banner-section-start--------------------------------->
+    <div
+      id="carouselExampleControlsNoTouching"
+      class="carousel slide"
+      data-bs-touch="false"
+      data-bs-interval="false"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel_total_content">
+          <img
+            src="./assets/images/banner-01.jpg"
+            class=" w-100"
+            alt="..."
+          />
+          <div class="carousel_content">
+            <button class="mb-4 p-2">Toronto,<span>Canada</span></button>
+            <h1>hurry!<br />Get the best<br />villa for you</h1>
+          </div>
+
+          
+        </div>
+        <div class="carousel-item carousel_total_content">
+          <img
+            src="./assets/images/banner-02.jpg"
+            class=" w-100"
+            alt="..."
+          />
+          <div class="carousel_content">
+            <button class="mb-4 p-2">Toronto,<span>Canada</span></button>
+            <h1>hurry!<br />Get the best<br/>villa for you</h1>
+          </div>
+        </div>
+        <div class="carousel-item carousel_total_content">
+          <img
+            src="./assets/images/banner-03.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel_content">
+            <button class="mb-4 p-2">Toronto,<span>Canada</span></button>
+            <h1>hurry!<br />Get the best<br />villa for you</h1>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- -----------------------------------------------------banner-section-end--------------------------------->
+    <!-- ----------------------------------------------------main-section------------------------------------ -->
+    <div class="container p-2 w-80 mt-5">
+      <div class="row gx-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+          <div class="home_detail_img1">
+            <img src="./assets/images/featured.jpg" class="img-fluid w-100" style="height:520px" />
+            <div class="rounded-circle fs-4">
+              <img src="./assets/images/featured-icon.png" style="background-color: #f35525; margin-top: -55px; margin-left: -25px;" class="p-4 rounded-circle" />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5 mb-5">
+          <h6 class="text-danger mb-4">I FEATURED</h6>
+          <h3 class="mb-4">
+            Best Appartment<br />
+            & Sea View
+          </h3>
+         <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h6 class="accordion-header red_heading text-danger" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Best usefull links ?
+                  </button>
+                </h6>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem <b>ipsum dolor</b> sit amet consectetur, adipisicing elit.
+              Labore ut quisquam voluptatem totam modi recusandae rerum
+              obcaecati
+              <span class="text-primary">molestiasaliquam, cumque</span>
+              quaerat neque dicta ullam dolorum accusantium aperia consectetur?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+              <div class="accordion-item">
+                <h6 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    How does this work ?
+                  </button>
+                </h6>
+                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h6 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   Why is Akshar Villa the best ?
+                  </button>
+                </h6>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+          </div>
+         </div>
+        </div>   
+        <div class="col-sm-12 col-md-12 col-lg-3 mb-5">
+          <div class="box col-lg-12 col-md-12 col-sm-12 px-4 py-5">
+            <div class="d-flex gap-4 my-3">
+              <img
+                src="./assets/images/info-icon-01.png"
+                style="width: 40px; height: 40px"
+              />
+              <div>
+                <h6>250 m2</h6>
+                <span>Total Flat Space</span>
+              </div>
+            </div>
+            <hr />
+            <div class="d-flex gap-4 my-4">
+              <img
+                src="./assets/images/info-icon-02.png"
+                style="width: 40px; height: 40px"
+              />
+              <div>
+                <h6>Contract</h6>
+                <span>Contract Ready</span>
+              </div>
+            </div>
+            <hr />
+            <div class="d-flex gap-4 my-4 ">
+              <img
+                src="./assets/images/info-icon-03.png"
+                style="width: 40px; height: 40px"
+              />
+              <div>
+                <h6>Payment</h6>
+                <span>Payment Process</span>
+              </div>
+            </div>
+            <hr />
+            <div class="d-flex gap-4 my-4">
+              <img
+                src="./assets/images/info-icon-04.png"
+                style="width: 40px; height: 40px"
+              />
+              <div>
+                <h6>Safety</h6>
+                <span>24/7 Under Control</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   
+    <!----------badge-start-------- -->
+    <div class="container mt-5 w-75">
+      <div class="row my-2 mx-auto d-flex justify-content-center">
+        <div class="col-lg-3 col-md-6 col-sm-12 p-0 mx-2 my-2">
+          <button
+            type="button"
+            class="btn position-relative col-12 red_btn_text blur_red_btn rounded"
+          >
+            <div class="row">
+              <div class="col-6"><h4 class="text-danger">34</h4></div>
+              <div class="col-6">
+                <h6 style="margin-left: -33px">Building</h6>
+                <h6>Finished Now</h6>
+              </div>
+            </div>
+            <span
+              class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
+            >
+            </span>
+          </button>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-0 mx-3 my-2">
+          <button
+            type="button"
+            class="btn position-relative col-12 red_btn_text blur_red_btn rounded"
+          >
+            <div class="row">
+              <div class="col-6"><h4 class="text-danger">34</h4></div>
+              <div class="col-6">
+                <h6 style="margin-left: -33px">Building</h6>
+                <h6>Finished Now</h6>
+              </div>
+            </div>
+            <span
+              class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
+            >
+            </span>
+          </button>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 p-0 mx-2 my-2">
+          <button
+            type="button"
+            class="btn position-relative col-12 red_btn_text blur_red_btn rounded"
+          >
+            <div class="row">
+              <div class="col-6"><h4 class="text-danger">34</h4></div>
+              <div class="col-6">
+                <h6 style="margin-left: -33px">Building</h6>
+                <h6>Finished Now</h6>
+              </div>
+            </div>
+            <span
+              class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
+            >
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+<!----------badge-end-------- -->
+
+<div class="container-fluid bg-light">
+  <div class="container p-5 w-80">
+  <div class="row">
+    <div class="row gx-5">
+      <div class="col-lg-6 col-md-12 col-sm-12 content_area_contact_page">
+        <h5 class="mb-3">I BEST DEAL</h5>
+        <h2 class="mb-3">
+          find your best deak<br />
+          right now!
+        </h2>
+      </div>
+    </div>
+  <div class="row my-5">
+    <div class="col-lg-4 col-md-12">
+      <div class="box px-5">
+        <div class="d-flex justify-content-between">
+          <p>Total Flat Space</p>
+          <h6>540m2</h6>
+        </div>
+        <hr />
+
+        <div class="d-flex justify-content-between">
+          <p>Floor number</p>
+          <h6>3</h6>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between">
+          <p>Total Flat Space</p>
+          <h6>540m2</h6>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between">
+          <p>Parking Available</p>
+          <h6>Yes</h6>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between">
+          <p>Payment Process</p>
+          <h6>Bank</h6>
+        </div>
+      </div>
+    </div>
+  
+    <!-- ---------------------------------------------------------------------------------- -->
+
+
+    <!-- <div class="col-lg-8 col-md-6 col-sm-12">
+      <div class="row">
+        <div class="d-flex justify-content-end gap-3 btns-group">
+          <ul class="nav nav-pills ">
+            <li class="nav-item mx-2">
+              <a
+                class="text-white px-4 py-2 red_btn mb-2"
+                id="nav-appertment-tab"
+                data-bs-toggle="tab"
+                href="#nav-appertment"
+                >Appertment</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="btn-dark px-4 py-2 mb-2"
+                id="nav-villa-tab"
+                data-bs-toggle="tab"
+                href="#nav-villa"
+                >Villa House</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="btn-dark px-4 py-2 mb-2"
+                id="nav-penthouse-tab"
+                data-bs-toggle="tab"
+                href="#nav-penthouse"
+                >Penthouse</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-12">
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade active show"
+              id="nav-appertment"
+              role="tabpanel"
+              aria-labelledby="nav-appertment-tab"
+            >
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <img
+                    src="assets/images/deal-01.jpg"
+                    class="img-fluid d-block mx-auto mt-5 deal-image"
+                    alt=""
+                  />
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+                  <h5><b>Extra Info About property</b></h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione sunt fugit aliquid, optio recusandae facere
+                    culpa explicabo repellendus, voluptatum mollitia nemo
+                    fuga eos deserunt, commodi molestiae quas ab vitae nulla
+                    magni. Asperiores voluptates eius assumenda rem esse
+                    expedita, ullam excepturi quo necessitatibus minus
+                    aliquid obcaecati a molestias quae in dolores! Lorem
+                    ipsum, dolor sit amet consectetur adipisicing elit.
+                    Excepturi quam autem consequatur
+                  </p>
+                  <a class="text-white bg-dark nav_button_style" href="#"
+                    ><i class="fa fa-phone  text-white p-3 me-1  rounded-circle" style="color:white; font-size: 12px; background-color: #f35525; margin-top: 10px;"></i>Schedule a visit
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-villa"
+              role="tabpanel"
+              aria-labelledby="nav-villa-tab"
+            >
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <img
+                    src="assets/images/deal-02.jpg"
+                    class="img-fluid d-block mx-auto mt-5 deal-image"
+                    alt=""
+                  />
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+                  <h5><b>Extra Info About Villa</b></h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione sunt fugit aliquid, optio recusandae facere
+                    culpa explicabo repellendus, voluptatum mollitia nemo
+                    fuga eos deserunt, commodi molestiae quas ab vitae nulla
+                    magni. Asperiores voluptates eius assumenda rem esse
+                    expedita, ullam excepturi quo necessitatibus minus
+                    aliquid obcaecati ea molestias quae in dolores! Lorem
+                    ipsum, dolor sit amet consectetur adipisicing elit.
+                    Excepturi quam autem consequatur
+                  </p>
+                  <a class="calender-style" class="text-dark" href="#"
+                    ><i class="fa fa-calendar"></i>Schedule a visit
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-penthouse"
+              role="tabpanel"
+              aria-labelledby="nav-penthouse-tab"
+            >
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <img
+                    src="assets/images/deal-03.jpg"
+                    class="img-fluid d-block mx-auto mt-5 deal-image"
+                    alt=""
+                  />
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+                  <h5><b>Extra Info About Penthouse</b></h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione sunt fugit aliquid, optio recusandae facere
+                    culpa explicabo repellendus, voluptatum mollitia nemo
+                    fuga eos deserunt, commodi molestiae quas ab vitae nulla
+                    magni. Asperiores voluptates eius assumenda rem esse
+                    expedita, ullam excepturi quo necessitatibus minus
+                    aliquid obcaecati ea molestias quae in dolores! Lorem
+                    ipsum, dolor sit amet consectetur adipisicing elit.
+                    Excepturi quam autem consequatur
+                  </p>
+                  <a class="calender-style text-dark"  href="#"
+                    ><i class="fa fa-calendar"></i>Schedule a visit
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div> -->
+
+  <div class="col-lg-8 col-md-6 col-sm-12">
+    <div class="row">
+        <div class="d-flex justify-content-end gap-3 btns-group">
+            <ul class="nav nav-pills btnss">
+                <li class="nav-item mx-2">
+                    <a class="text-white px-4 py-2 red_btn mb-2" id="nav-appertment-tab" data-bs-toggle="tab" href="#nav-appertment">Appertment</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="btn-dark px-4 py-2 mb-2" id="nav-villa-tab" data-bs-toggle="tab" href="#nav-villa">Villa House</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="btn-dark px-4 py-2 mb-2" id="nav-penthouse-tab" data-bs-toggle="tab" href="#nav-penthouse">Penthouse</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade active show" id="nav-appertment" role="tabpanel" aria-labelledby="nav-appertment-tab">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <img src="assets/images/deal-01.jpg" class="img-fluid d-block mx-auto mt-5 deal-image" alt="" />
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+                            <h5><b>Extra Info About property</b></h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sunt fugit aliquid, optio recusandae facere culpa explicabo repellendus, voluptatum mollitia nemo fuga eos deserunt, commodi molestiae quas ab vitae nulla magni. Asperiores voluptates eius assumenda rem esse expedita, ullam excepturi quo necessitatibus minus aliquid obcaecati a molestias quae in dolores! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quam autem consequatur
+                            </p>
+                            <a class="text-white bg-dark pe-3 ps-0 py-2 ms-0" style="border-radius: 20px; width:60px"  href="#"><i class="fa fa-phone text-white p-3 ms-0 me-2 rounded-circle" style="color:white; font-size: 12px; background-color: #f35525; margin-top: 10px;"></i>Schedule a visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-villa" role="tabpanel" aria-labelledby="nav-villa-tab">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <img src="assets/images/deal-02.jpg" class="img-fluid d-block mx-auto mt-5 deal-image" alt="" />
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+                            <h5><b>Extra Info About Villa</b></h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sunt fugit aliquid, optio recusandae facere culpa explicabo repellendus, voluptatum mollitia nemo fuga eos deserunt, commodi molestiae quas ab vitae nulla magni. Asperiores voluptates eius assumenda rem esse expedita, ullam excepturi quo necessitatibus minus aliquid obcaecati ea molestias quae in dolores! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quam autem consequatur
+                            </p>
+                            <a class="calender-style text-dark" href="#"><i class="fa fa-calendar"></i>Schedule a visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-penthouse" role="tabpanel" aria-labelledby="nav-penthouse-tab">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <img src="assets/images/deal-03.jpg" class="img-fluid d-block mx-auto mt-5 deal-image" alt="" />
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+                            <h5><b>Extra Info About Penthouse</b></h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sunt fugit aliquid, optio recusandae facere culpa explicabo repellendus, voluptatum mollitia nemo fuga eos deserunt, commodi molestiae quas ab vitae nulla magni. Asperiores voluptates eius assumenda rem esse expedita, ullam excepturi quo necessitatibus minus aliquid obcaecati ea molestias quae in dolores! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi quam autem consequatur
+                            </p>
+                            <a class="calender-style text-dark" href="#"><i class="fa fa-calendar"></i>Schedule a visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- ------card-section-start------- -->
+
+    <div class="container gy-5">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 bg-light">
+          <div class="card big_card rounded bg-light p-4 border-0">
+            <img
+              src="./assets/images/property-01.jpg"
+              class="card-img-top rounded"
+              alt="..."
+            />
+            <div>
+              <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                <button class="btn blur_red_btn">Luxury Villa</button>
+                <h5>$2.264.000</h5>
+              </div>             
+               <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+              <div class="details ">
+                <div class="detail_one d-flex gap-3">
+                  <span>Bedrooms:<b> 8</b></span>
+                  <span>Bedrooms:<b> 8</b></span>
+                </div>
+                <div class="detail_two d-flex gap-2">
+                  <p>Area:<b> 545m2</b></p>
+                  <p>Floor:<b> 3</b></p>
+                  <p>Parking:<b> 6 spots</b></p>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3">
+          <div class="card big_card rounded bg-light p-4 border-0">
+            <img
+              src="./assets/images/property-02.jpg"
+              class="card-img-top rounded"
+              alt="..."
+            />
+            <div>
+              <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                <button class="btn blur_red_btn">Luxury Villa</button>
+                <h5>$2.264.000</h5>
+              </div>             
+               <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+              <div class="details ">
+                <div class="detail_one d-flex gap-3">
+                  <span>Bedrooms:<b> 8</b></span>
+                  <span>Bedrooms:<b> 8</b></span>
+                </div>
+                <div class="detail_two d-flex gap-2">
+                  <p>Area:<b> 545m2</b></p>
+                  <p>Floor:<b> 3</b></p>
+                  <p>Parking:<b> 6 spots</b></p>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3">
+          <div class="card big_card rounded bg-light p-4 border-0">
+            <img
+              src="./assets/images/property-03.jpg"
+              class="card-img-top rounded"
+              alt="..."
+            />
+            <div>
+              <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                <button class="btn blur_red_btn">Luxury Villa</button>
+                <h5>$2.264.000</h5>
+              </div>             
+               <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+              <div class="details ">
+                <div class="detail_one d-flex gap-3">
+                  <span>Bedrooms:<b> 8</b></span>
+                  <span>Bedrooms:<b> 8</b></span>
+                </div>
+                <div class="detail_two d-flex gap-2">
+                  <p>Area:<b> 545m2</b></p>
+                  <p>Floor:<b> 3</b></p>
+                  <p>Parking:<b> 6 spots</b></p>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3">
+          <div class="card big_card rounded bg-light p-4 border-0">
+            <img
+              src="./assets/images/property-04.jpg"
+              class="card-img-top rounded"
+              alt="..."
+            />
+            <div>
+              <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                <button class="btn blur_red_btn">Luxury Villa</button>
+                <h5>$2.264.000</h5>
+              </div>             
+               <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+              <div class="details ">
+                <div class="detail_one d-flex gap-3">
+                  <span>Bedrooms:<b> 8</b></span>
+                  <span>Bedrooms:<b> 8</b></span>
+                </div>
+                <div class="detail_two d-flex gap-2">
+                  <p>Area:<b> 545m2</b></p>
+                  <p>Floor:<b> 3</b></p>
+                  <p>Parking:<b> 6 spots</b></p>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3">
+          <div class="card big_card rounded bg-light p-4 border-0">
+            <img
+              src="./assets/images/property-05.jpg"
+              class="card-img-top rounded"
+              alt="..."
+            />
+            <div>
+              <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                <button class="btn blur_red_btn">Luxury Villa</button>
+                <h5>$2.264.000</h5>
+              </div>             
+               <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+              <div class="details ">
+                <div class="detail_one d-flex gap-3">
+                  <span>Bedrooms:<b> 8</b></span>
+                  <span>Bedrooms:<b> 8</b></span>
+                </div>
+                <div class="detail_two d-flex gap-2">
+                  <p>Area:<b> 545m2</b></p>
+                  <p>Floor:<b> 3</b></p>
+                  <p>Parking:<b> 6 spots</b></p>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3">
+          <div class="card big_card rounded bg-light p-4 border-0">
+            <img
+              src="./assets/images/property-06.jpg"
+              class="card-img-top rounded"
+              alt="..."
+            />
+            <div>
+              <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                <button class="btn blur_red_btn">Luxury Villa</button>
+                <h5>$2.264.000</h5>
+              </div>             
+               <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+              <div class="details ">
+                <div class="detail_one d-flex gap-3">
+                  <span>Bedrooms:<b> 8</b></span>
+                  <span>Bedrooms:<b> 8</b></span>
+                </div>
+                <div class="detail_two d-flex gap-2">
+                  <p>Area:<b> 545m2</b></p>
+                  <p>Floor:<b> 3</b></p>
+                  <p>Parking:<b> 6 spots</b></p>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+              </div>
+            </div>
+             </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+   <section style="position: relative;">
+    <div class="container-fluid contact_background_i">
+      <div class="row text-center home_contact_content home_contact_bg_img">
+        <div class="col-12 mt-5">
+          <h6>I contact us</h6>
+          <h1>
+            get in touch with <br />
+            our agents
+          </h1>
+        </div>
+      </div>
+    </div>
+      <div class="row d-flex justify-content-center contact_content_items g-4">
+         <div class="col-lg-5 col-md-5 col-sm-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118106.71772249659!2d73.09068439469182!3d22.322081830866296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8ab91a3ddab%3A0xac39d3bfe1473fb8!2sVadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1710048235772!5m2!1sen!2sin"
+            width="100%"
+            height="390"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map_contact"
+          ></iframe> 
+           <div class="row">
+            <div class="col-lg-6">
+              <div class="box d-flex gap-4 my-3">
+                <img
+                  src="./assets/images/email-icon.png"
+                  style="width: 30px; height: 30px"
+                />
+                <div>
+                  <h6>188-220-0202</h6>
+                  <span>Phone Number</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box d-flex gap-4 my-3">
+                <img
+                  src="./assets/images/email-icon.png"
+                  style="width: 30px; height: 30px"
+                />
+                <div>
+                  <h6>info@aksharvilla.com</h6>
+                  <span>Business Email</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+         <div class="col-lg-4 col-md-4 col-sm-12">
+          <form class="row contact_form bg-white">
+            <div class="col-12">
+              <label for="exampleInputEmail1" class="form-label"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="form-control transparent-input input_styles mb-2"
+                id="inputName"
+              />
+            </div>
+            <div class="col-md-12">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                placeholder="Your E-mail.."
+                class="form-control transparent-input input_styles mb-2"
+                id="inputEmail4"
+              />
+            </div>
+            <div class="col-md-12">
+              <label for="exampleInputEmail1" class="form-label">Subject</label>
+              <input
+                type="email"
+                placeholder="Subject.."
+                class="form-control transparent-input input_styles mb-2"
+                id="inputEmail4"
+              />
+            </div>
+
+            <div class="col-md-12">
+              <label for="exampleInputEmail1" class="form-label">Message</label>
+              <textarea
+                rows="5"
+                class="form-control transparent-input input_styles pt-0 mb-2"
+                placeholder=" Your Message"
+              ></textarea>
+            </div>
+
+            <div class="mt-5">
+              <a
+                href="#"
+                class="cards-buttons bg-dark px-4 py-2 text-white mb-4"
+                >Schedule a visite</a
+              >
+            </div>
+          </form>
+        </div>
+      </div> 
+    </div>
+    
+   </section>
+    <!-- ----------------------------------------------------main-section------------------------------------ -->
+    <!-- ----------------------------------------------------footer--------------------------------------------->
+<section style="position: relative;">
+  <footer class="container-fluid bg-dark text-center footer_content" style="position: relative;">
+    <span class="footer_text">
+      Copyright @ 2024 Akshar Villa. All rights reserved.</span
+    >
+  </footer>
+</section>
+   
+
+    <!-- -------------------------------------------------footer-end--------------------------------------- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
