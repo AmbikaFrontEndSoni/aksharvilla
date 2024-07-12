@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>property</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      .isotope-pager a {
+        padding: 10px 15px;
+        border-radius: 20px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+      }
+      .isotope-pager{
+        display:flex;
+        justify-content: center;
+        gap:10px;
+        margin: 20px 0px;
+      }
+      .isotope-pager .pager {
+        padding: 10px 15px;
+        border-radius: 20px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+      }
+      .pager.page-active {
+        background-color: orangered;
+        color: white;
+      }
+      .mixing_button.tab-active {
+        background-color: orangered;
+        color: white;
+      }
+      li {
+        list-style: none;
+      }
+      .mixing_button {
+        text-decoration: none;
+        color: white;
+        padding: 10px 30px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+      }
+      a:hover {
+        color: white;
+      }
+      .btns-group{
+        display: flex;
+        justify-content: center;
+        gap:20px;
+      }
+      .mixing_button.tab-active {
+    background-color: orangered;
+    color: white;
+}
+      </style>
+  </head>
+  <body>
+    <!-- --------------------------------------------------header-section-start------------------------------------ -->
+
+    <header class="container-fluid">
+      <div class="container-fluid d-none d-lg-block header-one">
+        <div class="row ">
+          <div class="col-6 d-flex gap-5 align-items-center">
+            <div
+          class=" d-flex gap-5"
+        >
+           
+            <div class="email_head-one">
+              <i class="fa-solid fa-envelope" style="color: #f35525"></i>
+              <span>info@aksharvilla.com</span>
+            </div>
+            <div class="email_head-one">
+              <i
+                class="fa-sharp fa-solid fa-book-open"
+                style="color: #f35525"
+              ></i>
+              <span>app.Knowledge City, Vadodara, Gujarat 390019</span>
+            </div>
+          </div>
+          </div>
+         
+          <div class="col-6 d-flex align-items-center justify-content-end gap-3 header-one-right ">
+              <i class="fa-brands fa-facebook p-2"></i>
+              <i class="fa-brands fa-twitter p-2"></i>
+              <i class="fa-brands fa-linkedin p-2"></i>
+              <i class="fa-brands fa-square-instagram p-2"></i>
+            </div>
+       </div>
+        </div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./assets/images/logo2.png"
+              alt="logo"
+              style="width: 160px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item px-3">
+                <a
+                  class="nav-link active property_nav_link"
+                  aria-current="page"
+                  href="#"
+                  >Properties</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="property_details.html"
+                  >Property Details</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="contactUs.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item ps-3 d-flex btn_nav_link">
+                <i class="fa-solid fa-phone"></i>
+                <a
+                  class="nav-link active text-white bg-dark px-5 text-right nav_button_style"
+                  href="#"
+                  >Schedule a viste</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- --------------------------------------------------header-section-end------------------------------------ -->
+
+    <!-- -----------------------------------------------------banner-section-start--------------------------------->
+    <div class="container-fluid property_banner mb-5">
+      <div class="property_banner_content">
+        <button class="btn">Home / Properties</button>
+        <h1 class="text-white py-4">Properties</h1>
+      </div>
+    </div>
+    <!-- -----------------------------------------------------banner-section-end--------------------------------->
+    <!-- ----------------------------------------------------main-section------------------------------------ -->
+    <!-- ----------------------------------------- ----------button-section---------------------------------- -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+          
+          <ul class="filters btns-group gap-2">
+            <li >
+              <a href="javascript:void(0);" data-filter="*" class="tab-active mixing_button">Show All</a>
+            </li>
+            <li ><a href="javascript:void(0);" data-filter="apartment" class="mixing_button"
+              >Apartment</a></li>
+            <li ><a href="javascript:void(0);" data-filter="villa" class="mixing_button">Villa House</a></li>
+            <li ><a href="javascript:void(0);" data-filter="penthouse" class="mixing_button"
+             >Penthouse</a></li>
+          </ul>
+        </div>
+      </div>
+     </div>
+    <!-- ----------------------------------------- ----------button-section-end--------------------------------->
+
+    <!-- ------------------------------------------------card-section-start-------------------------------------->
+   
+   
+        <div class="container  gy-5 w-75" >
+          <div class="row">
+            <div class="isotope" id="villsprop">
+             <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="apartment">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-01.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="apartment">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-02.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="apartment">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-03.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+            
+  
+  
+            <!-- -----apartment---------- -->
+           
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="villa">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-04.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="villa">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-05.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="villa">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-06.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+           
+    <!------------------penthouse-  -->
+  
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="penthouse">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-01.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="penthouse">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-06.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="penthouse">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-01.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="penthouse">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-01.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="penthouse">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-06.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="penthouse">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-01.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="penthouse">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-01.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="penthouse">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-06.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="penthouse">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-01.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="penthouse">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-01.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="penthouse">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-06.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-sm-0 my-2 mb-3 grid-item" data-filter="penthouse">
+              <div class="card big_card rounded bg-light p-4 border-0">
+                <img
+                  src="./assets/images/property-01.jpg"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div>
+                  <div class="price_detail d-flex justify-content-between align-items-center my-3 mx-0">
+                    <button class="btn blur_red_btn">Luxury Villa</button>
+                    <h5>$2.264.000</h5>
+                  </div>             
+                   <h5 class="fs-6 my-4">18 Old Street Miami, OR 97219<h5>
+                  <div class="details ">
+                    <div class="detail_one d-flex gap-3">
+                      <span>Bedrooms:<b> 8</b></span>
+                      <span>Bedrooms:<b> 8</b></span>
+                    </div>
+                    <div class="detail_two d-flex gap-2">
+                      <p>Area:<b> 545m2</b></p>
+                      <p>Floor:<b> 3</b></p>
+                      <p>Parking:<b> 6 spots</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="cards-buttons bg-dark px-4 py-2 text-white ">Schedule a visite</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+           
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          var itemSelector = ".grid-item";
+    
+          var $container = $("#villsprop").isotope({
+            itemSelector: itemSelector,
+            masonry: {
+              columnWidth: itemSelector,
+              isFitWidth: true,
+            },
+          });
+    
+          $(".filters li a").click(function () {
+            $(".filters li a").removeClass("tab-active");
+            $(this).addClass("tab-active");
+    
+          });
+    
+          //Ascending order
+          var responsiveIsotope = [
+            [480, 4],
+            [720, 6],
+          ];
+    
+          var itemsPerPageDefault = 9;
+          var itemsPerPage = defineItemsPerPage();
+          var currentNumberPages = 2;
+          var currentPage = 1;
+          var currentFilter = "*";
+          var filterAtribute = "data-filter";
+          var pageAtribute = "data-page";
+          var pagerClass = "isotope-pager";
+    
+          function changeFilter(selector) {
+            $container.isotope({
+              filter: selector,
+            });
+          }
+    
+          function getFilterSelector() {
+            var selector = itemSelector;
+            if (currentFilter != "*") {
+              selector += `[${filterAtribute}~="${currentFilter}"]`;
+            }
+            return selector;
+          }
+    
+          function goToPage(n) {
+            currentPage = n;
+    
+            var selector = getFilterSelector();
+            selector += `[${pageAtribute}="${currentPage}"]`;
+    
+            changeFilter(selector);
+          }
+    
+          function defineItemsPerPage() {
+            var pages = itemsPerPageDefault;
+    
+            for (var i = 0; i < responsiveIsotope.length; i++) {
+              if ($(window).width() <= responsiveIsotope[i][0]) {
+                pages = responsiveIsotope[i][1];
+                break;
+              }
+            }
+    
+            return pages;
+          }
+    
+          function setPagination() {
+            var SettingsPagesOnItems = (function () {
+              var itemsLength = $container.children(itemSelector).length;
+    
+              var pages = Math.ceil(itemsLength / itemsPerPage);
+              var item = 1;
+              var page = 1;
+              var selector = getFilterSelector();
+    
+              $container.children(selector).each(function () {
+                if (item > itemsPerPage) {
+                  page++;
+                  item = 1;
+                }
+                $(this).attr(pageAtribute, page);
+                item++;
+              });
+    
+              currentNumberPages = page;
+            })();
+    
+            var CreatePagers = (function () {
+              var $isotopePager =
+                $("." + pagerClass).length == 0
+                  ? $('<div class="' + pagerClass + '"></div>')
+                  : $("." + pagerClass);
+    
+              $isotopePager.html("");
+    
+              for (var i = 0; i < currentNumberPages; i++) {
+                var $pager = $(
+                  '<a href="javascript:void(0);" class="pager ' +
+                    (i == 0 ? "page-active" : "") +
+                    '" ' +
+                    pageAtribute +
+                    '="' +
+                    (i + 1) +
+                    '"></a>'
+                );
+    
+                $pager.html(i + 1);
+    
+                $pager.click(function () {
+                  var page = $(this).eq(0).attr(pageAtribute);
+                  goToPage(page);
+                  $(this)
+                    .addClass("page-active")
+                    .siblings()
+                    .removeClass("page-active");
+                });
+    
+                $pager.appendTo($isotopePager);
+              }
+    
+              $container.after($isotopePager);
+            })();
+          }
+    
+          setPagination();
+          goToPage(1);
+    
+          //Adicionando Event de Click para as categorias
+          $(".filters a").click(function () {
+            var filter = $(this).attr(filterAtribute);
+            currentFilter = filter;
+    
+            setPagination();
+            goToPage(1);
+          });
+    
+          //Evento Responsivo
+          $(window).resize(function () {
+            itemsPerPage = defineItemsPerPage();
+            setPagination();
+            goToPage(1);
+          });
+        });
+      </script>
+     
+  
+      <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  
+  </body>
+  </html>
